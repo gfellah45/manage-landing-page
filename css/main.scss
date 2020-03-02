@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam:400,500i,700&display=swap');
+@import 'header';
+@import 'config';
+@import 'showcase';
+@import 'unique';
+@import 'testimonials';
+@import 'footer';
+@import 'responsive';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+    font-family: 'Be Vietnam';
+}
+
+body{
+    @include animation();   
+}
+
+
+.change{
+    background: $bg-color-nav;
+}
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+li{
+    list-style-type: none;
+}

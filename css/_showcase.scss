@@ -1,0 +1,58 @@
+@import 'config';
+
+.showcase{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    position: relative;
+    &__display{
+        background-image: url('../images/illustration-intro.svg');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 41vh;
+        .desktop{
+            display: none;
+        }
+    }
+    &__text{
+        padding: .3rem 0;
+        h1{
+            font-size: 2rem;
+            text-align: center;
+            color: $primary-color2;
+            font-weight: 700;
+            width: 100%;
+            
+        }
+        p{
+            text-align: center;
+            color: $primary-color2;
+            opacity: .7;
+            margin: 1rem auto;
+            font-size: 1.3rem;
+            
+            
+        }
+        a{
+            @include buttons();
+            width: 65%;
+        }
+    }
+    .bg__image2__mobile{
+        background-image: url('../images/bg-tablet-pattern.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom right;
+        position: absolute;
+        top: 300px;
+        right: -300px;
+        width: 750px;
+        height: 420px;
+        z-index: -1;
+        
+
+    }
+
+}

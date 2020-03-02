@@ -1,0 +1,91 @@
+@import 'config';
+
+.testimonials{
+    margin: 1rem 0;
+    h1{
+        text-align: center;
+        color: $primary-color2;
+        
+    }
+    .card{
+        @include animation();
+        background: $card-bg2;
+        margin: 4rem 0;
+        position: relative;
+        display: none;
+        img{
+            width: 18vw;
+            position: absolute;
+            left: 40%;
+            top: -8vw;
+        }
+        h4{
+            padding: 15vw 0 2rem 0;
+            text-align: center;
+            color: $primary-color2;
+        }
+        p{
+            text-align: center;
+            color: $primary-color2;
+            line-height: 25px;
+            font-size: 15px;
+            padding-bottom: 2rem;
+            opacity: .8;
+        }
+        
+    }
+    .isActive{
+        
+        display: block;
+    }
+    .nav__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .wrapper{
+            display: flex;
+            .circle{
+                @include animation();
+                width: 10px;
+                height: 10px;
+                border-radius: 500px;
+                border: 1px solid $primary-color1;
+                margin: 2px;
+                cursor: pointer;
+                
+            }
+            .active{
+                background: $primary-color1;
+            }
+        }
+        
+    }
+    a{
+        @include buttons();
+        width: 65%;
+    }
+}
+
+
+// wrote the team work in testimonials partials because its just a few line of code
+
+.team_works{
+    background: $primary-color1;
+    padding: 15vw 7vw;
+    background-image: url('../images/bg-simplify-section-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    h1{
+        color: #fff;
+        font-size: 42px;
+        text-align: center;
+        margin: 5vw 0;
+    }
+    a{
+        @include buttons();
+        background: #fff;
+        color: $primary-color1;
+        width: 65%;
+    }
+}

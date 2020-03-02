@@ -1,0 +1,99 @@
+@import 'config';
+
+
+.heading{
+    padding: 1rem 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    .brand__name{
+        margin: .8rem 0 0 0;
+        img{
+            width: 25vw;
+        }
+    } 
+    .hambuger__menu{
+        @include animation();
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 20px;
+        height: 30px;
+        cursor: pointer;
+        transform: rotate(360deg); 
+        background: transparent;
+        
+    }
+    .bar{
+        @include animation();
+        background: $primary-color2;
+        height: 3px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .change .bar1{
+        transform: rotateZ(-45deg) translate(-8px, 6px);
+    }
+    .change .bar3{
+        transform: rotateZ(45deg) translate(-8px, -6px);
+    }
+    .change .bar2{
+        opacity: 0;
+    }
+
+    .navigation{
+        @include animation();
+        width: 90%;
+        position: fixed;
+        top: 40px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        z-index: 10;
+        margin: 2rem auto;
+        background: hsl(100%, 100%, 200%);
+        border-radius: 10px;
+        transform: translateY(-1000px);
+        .nav__item{
+            margin: 4vw auto;
+            text-align: center;
+            .nav__link{
+                font-size: 5vw;
+                color: $text-color;
+                opacity: .8;
+                &:hover{
+                    color: $primary-color1;
+                }
+            }
+            
+            
+        }
+        .getting-started{
+            display: none;
+        }
+    }
+    .change{
+        transform: none;
+    }
+    .bg-image{
+        background-image: url('../images/bg-tablet-pattern.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top right;
+        position: absolute;
+        top: -80px;
+        right: -100px;
+        width: 750px;
+        height: 420px;
+        z-index: -1;
+    }
+   
+
+}
+
