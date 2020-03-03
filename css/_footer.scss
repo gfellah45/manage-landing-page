@@ -8,11 +8,12 @@ footer{
     form{
         padding: 2vw 0;
         input[type='email']{
-            padding: .7rem 2.5rem;
+            padding: .7rem 2rem;
             border-radius: 500px;
             border: none;
             outline: none;
             color: $primary-color2;
+            width: 70%;
         }
         input[type='submit']{
             padding: .7rem 1.2rem;
@@ -52,7 +53,7 @@ footer{
             img{
                 @include animation();
                 margin: .7rem;
-                width: 2rem;
+                width: 1.6rem;
                 cursor: pointer;
                 &:hover{
                     transform: scale(1.2);

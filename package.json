@@ -1,0 +1,19 @@
+{
+  "name": "manage-landing-page",
+  "version": "1.0.0",
+  "description": "A FRONT END MENTOR CHALLENGE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gfellah45/manage-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gfellah45/manage-landing-page/issues"
+  },
+  "homepage": "https://github.com/gfellah45/manage-landing-page#readme"
+}

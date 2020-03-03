@@ -418,11 +418,12 @@ footer form {
 }
 
 footer form input[type='email'] {
-  padding: .7rem 2.5rem;
+  padding: .7rem 2rem;
   border-radius: 500px;
   border: none;
   outline: none;
   color: #242d52;
+  width: 70%;
 }
 
 footer form input[type='submit'] {
@@ -481,7 +482,7 @@ footer .socials__heading .socials img {
   -webkit-transition: ease-in-out .5s .1s;
   transition: ease-in-out .5s .1s;
   margin: .7rem;
-  width: 2rem;
+  width: 1.6rem;
   cursor: pointer;
 }
 
